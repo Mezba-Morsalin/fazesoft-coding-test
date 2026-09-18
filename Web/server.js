@@ -20,7 +20,7 @@ app.post("/api/task", (req, res)=> {
         })
     }
 
-    if (typeof category !== "string" || !category.includes((category)) === "") {
+    if (typeof category !== "string" || !categories.includes((category)) === "") {
         return res.status(400).json({
             error : "category must worked, personal, or study"
         })
